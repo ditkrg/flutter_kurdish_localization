@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_kurdish_localization/flutter_kurdish_localization.dart';
-import 'package:flutter_kurdish_localization_example/util/constants.dart';
 import 'package:flutter_kurdish_localization_example/localization/demo_localization.dart';
 import 'package:flutter_kurdish_localization_example/router/custom_router.dart';
 import 'package:flutter_kurdish_localization_example/router/route_constants.dart';
+import 'package:flutter_kurdish_localization_example/util/constants.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 import 'localization/language_constants.dart';
 
 bool? landingScreen;
@@ -27,7 +28,7 @@ void main() async {
 
 const List<Locale> supportedLocales = [
   Locale('en'),
-  Locale('ku'),
+  Locale('ckb'),
   Locale('ar'),
 ];
 
@@ -73,10 +74,12 @@ class _MyAppState extends State<MyApp> {
       locale: _locale,
       supportedLocales: supportedLocales,
       localizationsDelegates: const [
-        DemoLocalization.delegate,
         KurdishMaterialLocalizations.delegate,
         KurdishWidgetLocalizations.delegate,
+        KurdishCupertinoLocalizations.delegate,
+        DemoLocalization.delegate,
         GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate
       ],
       localeResolutionCallback: (locale, supportedLocales) {

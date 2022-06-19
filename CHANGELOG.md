@@ -19,7 +19,7 @@
 * fixing some problems.
 
 ## 0.0.8
-* change ckb to ku
+* change ckb to ckb
 
 ## 0.0.9
 * Adding new words
