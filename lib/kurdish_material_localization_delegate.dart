@@ -527,4 +527,7 @@ class KurdishMaterialLocalizations extends GlobalMaterialLocalizations {
 
   @override
   String get keyboardKeyZenkakuHankaku => 'Zenkaku Hankaku';
+
+  @override
+  String get menuBarMenuLabel => 'Menu bar menu';
 }
