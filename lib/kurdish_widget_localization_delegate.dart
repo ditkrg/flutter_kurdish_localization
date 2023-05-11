@@ -28,4 +28,22 @@ class KurdishWidgetLocalizations extends WidgetsLocalizations {
 
   @override
   TextDirection get textDirection => TextDirection.rtl;
+
+  @override
+  String get reorderItemDown => 'ڕایبکێشەرە خوارەوە';
+
+  @override
+  String get reorderItemLeft => 'ڕایبکێشەرە لای چەپ';
+
+  @override
+  String get reorderItemRight => 'ڕایبکێشەرە لای ڕاست';
+
+  @override
+  String get reorderItemToEnd => 'بردنە کۆتا';
+
+  @override
+  String get reorderItemToStart => 'بردنە سەرەتا';
+
+  @override
+  String get reorderItemUp => 'ڕایبکێشەرە سەرەوە';
 }

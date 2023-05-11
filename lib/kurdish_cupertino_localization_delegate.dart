@@ -196,7 +196,10 @@ class KurdishCupertinoLocalizations extends GlobalCupertinoLocalizations {
   String? get timerPickerSecondLabelZero => null;
 
   @override
-  String get todayLabel => 'Namuhla';
+  String get todayLabel => 'ئەمڕۆ';
+
+  @override
+  String get noSpellCheckReplacementsLabel => 'هیچ نەدۆزرایەوە';
 }
 
 const kuDateSymbols = {
