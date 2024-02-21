@@ -52,27 +52,17 @@ class _KurdishMaterialLocalizationsDelegate
 
 class KurdishMaterialLocalizations extends GlobalMaterialLocalizations {
   const KurdishMaterialLocalizations({
-    String localeName = 'ckb',
-    required intl.DateFormat fullYearFormat,
-    required intl.DateFormat shortDateFormat,
-    required intl.DateFormat compactDateFormat,
-    required intl.DateFormat shortMonthDayFormat,
-    required intl.DateFormat mediumDateFormat,
-    required intl.DateFormat longDateFormat,
-    required intl.DateFormat yearMonthFormat,
-    required intl.NumberFormat decimalFormat,
-    required intl.NumberFormat twoDigitZeroPaddedFormat,
-  }) : super(
-            localeName: localeName,
-            shortDateFormat: shortDateFormat,
-            compactDateFormat: compactDateFormat,
-            shortMonthDayFormat: shortMonthDayFormat,
-            fullYearFormat: fullYearFormat,
-            mediumDateFormat: mediumDateFormat,
-            longDateFormat: longDateFormat,
-            yearMonthFormat: yearMonthFormat,
-            decimalFormat: decimalFormat,
-            twoDigitZeroPaddedFormat: twoDigitZeroPaddedFormat);
+    super.localeName = 'ckb',
+    required super.fullYearFormat,
+    required super.shortDateFormat,
+    required super.compactDateFormat,
+    required super.shortMonthDayFormat,
+    required super.mediumDateFormat,
+    required super.longDateFormat,
+    required super.yearMonthFormat,
+    required super.decimalFormat,
+    required super.twoDigitZeroPaddedFormat,
+  });
   static const LocalizationsDelegate<MaterialLocalizations> delegate =
       _KurdishMaterialLocalizationsDelegate();
 
@@ -508,5 +498,38 @@ class KurdishMaterialLocalizations extends GlobalMaterialLocalizations {
   String get scrimLabel => 'Scrim';
 
   @override
-  String get scrimOnTapHintRaw => 'Tap here to dismiss.';
+  String get scrimOnTapHintRaw => 'ئێرە داگرە بۆ لابردن';
+
+  @override
+  String get collapsedHint => 'بچوککراو';
+
+  @override
+  String get expandedHint => 'گەورەکراو';
+
+  @override
+  String get expansionTileCollapsedHint => 'بچوککراو';
+
+  @override
+  String get expansionTileCollapsedTapHint => 'داگرە بۆ گەورەکردن';
+
+  @override
+  String get expansionTileExpandedHint => 'گەورەکراو';
+
+  @override
+  String get expansionTileExpandedTapHint => 'داگرە بۆ بچوککردن';
+
+  @override
+  String get lookUpButtonLabel => 'گەڕان';
+
+  @override
+  String get menuDismissLabel => 'لابردنەوەی مێنیو';
+
+  @override
+  String get scanTextButtonLabel => 'سکانکردنی دەق';
+
+  @override
+  String get searchWebButtonLabel => 'گەڕان لە وێب';
+
+  @override
+  String get shareButtonLabel => 'هاوبەشکردن';
 }
