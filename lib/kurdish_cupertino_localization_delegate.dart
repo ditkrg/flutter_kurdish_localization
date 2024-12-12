@@ -35,6 +35,7 @@ class _KurdishCupertinoLocalizationsDelegate
         singleDigitMinuteFormat: intl.DateFormat('m', localeName),
         singleDigitSecondFormat: intl.DateFormat('s', localeName),
         localeName: localeName,
+        weekdayFormat: intl.DateFormat('EEEE', localeName),
       ),
     );
   }
@@ -55,6 +56,7 @@ class KurdishCupertinoLocalizations extends GlobalCupertinoLocalizations {
     required super.singleDigitMinuteFormat,
     required super.singleDigitSecondFormat,
     required intl.NumberFormat twoDigitZeroPaddedFormat,
+    required super.weekdayFormat,
   });
   static const LocalizationsDelegate<CupertinoLocalizations> delegate =
       _KurdishCupertinoLocalizationsDelegate();
