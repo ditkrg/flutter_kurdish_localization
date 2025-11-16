@@ -213,6 +213,24 @@ class KurdishCupertinoLocalizations extends GlobalCupertinoLocalizations {
 
   @override
   String get cancelButtonLabel => 'لابردن';
+
+  @override
+  String get collapsedHint => 'بچوککراو';
+
+  @override
+  String get expandedHint => 'گەورەکراو';
+
+  @override
+  String get expansionTileCollapsedHint => 'بچوککراو';
+
+  @override
+  String get expansionTileCollapsedTapHint => 'داگرە بۆ گەورەکردن';
+
+  @override
+  String get expansionTileExpandedHint => 'گەورەکراو';
+
+  @override
+  String get expansionTileExpandedTapHint => 'داگرە بۆ بچوککردن';
 }
 
 const kuDateSymbols = {
