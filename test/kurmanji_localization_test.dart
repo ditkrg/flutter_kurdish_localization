@@ -74,6 +74,38 @@ void main() {
     });
   });
 
+  group('Kurmanji cross-class consistency', () {
+    // Material/Cupertino/Widget were built in separate passes and drifted:
+    // Material still had ckb's own AM/PM abbreviations and "today" word
+    // instead of Badini's, and Cupertino had a different "share" word than
+    // Material/Widget's shared choice. Pin them equal so this can't recur.
+    test('AM/PM abbreviations and "today" agree between Material and '
+        'Cupertino', () async {
+      final mat =
+          await KurmanjiMaterialLocalizations.delegate.load(kmr)
+              as KurmanjiMaterialLocalizations;
+      final cup =
+          await KurmanjiCupertinoLocalizations.delegate.load(kmr)
+              as KurmanjiCupertinoLocalizations;
+      expect(mat.anteMeridiemAbbreviation, cup.anteMeridiemAbbreviation);
+      expect(mat.postMeridiemAbbreviation, cup.postMeridiemAbbreviation);
+      expect(mat.currentDateLabel, cup.todayLabel);
+    });
+
+    test('"share" is translated the same way in all three classes',
+        () async {
+      final mat =
+          await KurmanjiMaterialLocalizations.delegate.load(kmr)
+              as KurmanjiMaterialLocalizations;
+      final cup =
+          await KurmanjiCupertinoLocalizations.delegate.load(kmr)
+              as KurmanjiCupertinoLocalizations;
+      final wid = await KurmanjiWidgetLocalizations.delegate.load(kmr);
+      expect(mat.shareButtonLabel, cup.shareButtonLabel);
+      expect(mat.shareButtonLabel, wid.shareButtonLabel);
+    });
+  });
+
   group('Kurdish (ckb) Cupertino regression coverage', () {
     // The upstream package once shipped several Cupertino strings still in
     // Zulu (leftover from whatever locale template it was originally cloned

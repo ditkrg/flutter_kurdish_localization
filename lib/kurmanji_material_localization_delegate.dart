@@ -75,7 +75,7 @@ class KurmanjiMaterialLocalizations extends GlobalMaterialLocalizations {
   String get alertDialogLabel => 'ئاگادارکرن';
 
   @override
-  String get anteMeridiemAbbreviation => 'پ.ن';
+  String get anteMeridiemAbbreviation => 'ب.ن';
 
   @override
   String get backButtonTooltip => 'ڤەگەڕان';
@@ -212,7 +212,7 @@ class KurmanjiMaterialLocalizations extends GlobalMaterialLocalizations {
   String get popupMenuLabel => 'لیستا دەرکەوتی';
 
   @override
-  String get postMeridiemAbbreviation => 'د.ن';
+  String get postMeridiemAbbreviation => 'پ.ن';
 
   @override
   String get previousMonthTooltip => 'مانگێ پێشتر';
@@ -491,7 +491,7 @@ class KurmanjiMaterialLocalizations extends GlobalMaterialLocalizations {
   String get bottomSheetLabel => 'پەڕا خوارێ';
 
   @override
-  String get currentDateLabel => 'ئەمڕۆ';
+  String get currentDateLabel => 'ئیرۆ';
 
   @override
   String get keyboardKeyShift => 'Left Shift';

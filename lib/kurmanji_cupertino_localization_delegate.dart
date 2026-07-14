@@ -208,7 +208,7 @@ class KurmanjiCupertinoLocalizations extends GlobalCupertinoLocalizations {
   String get searchWebButtonLabel => 'گەڕین ل سەر وێبێ';
 
   @override
-  String get shareButtonLabel => 'هاوبەشکرن';
+  String get shareButtonLabel => 'پارڤەکرن';
 
   @override
   String get backButtonLabel => 'ڤەگەڕان';
