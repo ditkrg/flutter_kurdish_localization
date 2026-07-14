@@ -111,7 +111,7 @@ class KurmanjiMaterialLocalizations extends GlobalMaterialLocalizations {
   String get dateInputLabel => 'بەروار بنڤیسە';
 
   @override
-  String get dateOutOfRangeLabel => 'دەرڤەی مەودایێ یە';
+  String get dateOutOfRangeLabel => 'ل دەرڤەی مەودایێ یە';
 
   @override
   String get datePickerHelpText => 'بەروار دیاری بکە';
@@ -485,10 +485,10 @@ class KurmanjiMaterialLocalizations extends GlobalMaterialLocalizations {
   String get keyboardKeySpace => 'Space';
 
   @override
-  String get menuBarMenuLabel => 'Menu bar menu';
+  String get menuBarMenuLabel => 'مێنیوا شریتی';
 
   @override
-  String get bottomSheetLabel => 'Bottom sheet';
+  String get bottomSheetLabel => 'پەڕا خوارێ';
 
   @override
   String get currentDateLabel => 'ئەمڕۆ';
@@ -497,7 +497,7 @@ class KurmanjiMaterialLocalizations extends GlobalMaterialLocalizations {
   String get keyboardKeyShift => 'Left Shift';
 
   @override
-  String get scrimLabel => 'Scrim';
+  String get scrimLabel => 'پەردا تاریککەر';
 
   @override
   String get scrimOnTapHintRaw => 'پەنجە لێدە بۆ لابرنێ';

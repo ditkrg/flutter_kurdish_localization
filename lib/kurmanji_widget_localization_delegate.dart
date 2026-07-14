@@ -30,23 +30,28 @@ class KurmanjiWidgetLocalizations extends WidgetsLocalizations {
   @override
   TextDirection get textDirection => TextDirection.rtl;
 
+  // Directs the drag action AT the item (transitive), matching the ckb
+  // sibling file's own "ڕایبکێشەرە" (pull/drag) semantics -- not the
+  // intransitive "go" phrasing used for the identical getters in
+  // kurmanji_material_localization_delegate.dart, which reads as an
+  // instruction to the user to move themselves, not the list item.
   @override
-  String get reorderItemDown => 'بچۆ خوارێ';
+  String get reorderItemDown => 'بکێشە خوارێ';
 
   @override
-  String get reorderItemLeft => 'بچۆ لای چەپ';
+  String get reorderItemLeft => 'بکێشە لای چەپ';
 
   @override
-  String get reorderItemRight => 'بچۆ لای ڕاست';
+  String get reorderItemRight => 'بکێشە لای ڕاست';
 
   @override
-  String get reorderItemToEnd => 'بچۆ کۆتایی';
+  String get reorderItemToEnd => 'بکێشە بۆ کۆتایی';
 
   @override
-  String get reorderItemToStart => 'بچۆ سەرەتا';
+  String get reorderItemToStart => 'بکێشە بۆ سەرەتا';
 
   @override
-  String get reorderItemUp => 'بچۆ سەرێ';
+  String get reorderItemUp => 'بکێشە سەرێ';
 
   @override
   String get copyButtonLabel => 'کۆپی';

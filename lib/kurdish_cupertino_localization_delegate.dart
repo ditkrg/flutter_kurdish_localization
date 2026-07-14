@@ -98,10 +98,10 @@ class KurdishCupertinoLocalizations extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelMany => null;
 
   @override
-  String? get datePickerHourSemanticsLabelOne => r'$hour ezimpondweni';
+  String? get datePickerHourSemanticsLabelOne => r'کاتژمێر $hour';
 
   @override
-  String get datePickerHourSemanticsLabelOther => r'$hour ezimpondweni';
+  String get datePickerHourSemanticsLabelOther => r'کاتژمێر $hour';
 
   @override
   String? get datePickerHourSemanticsLabelTwo => null;
@@ -116,10 +116,10 @@ class KurdishCupertinoLocalizations extends GlobalCupertinoLocalizations {
   String? get datePickerMinuteSemanticsLabelMany => null;
 
   @override
-  String? get datePickerMinuteSemanticsLabelOne => '1 iminithi';
+  String? get datePickerMinuteSemanticsLabelOne => '١ خولەک';
 
   @override
-  String get datePickerMinuteSemanticsLabelOther => r'$minute amaminithi';
+  String get datePickerMinuteSemanticsLabelOther => r'$minute خولەک';
 
   @override
   String? get datePickerMinuteSemanticsLabelTwo => null;
@@ -128,10 +128,10 @@ class KurdishCupertinoLocalizations extends GlobalCupertinoLocalizations {
   String? get datePickerMinuteSemanticsLabelZero => null;
 
   @override
-  String get searchTextFieldPlaceholderLabel => 'Sesha';
+  String get searchTextFieldPlaceholderLabel => 'گەڕان';
 
   @override
-  String get tabSemanticsLabelRaw => r'Ithebhu $tabIndex kwangu-$tabCount';
+  String get tabSemanticsLabelRaw => r'خشتەبەندی $tabIndex لە $tabCount';
 
   @override
   String? get timerPickerHourLabelFew => null;
@@ -140,10 +140,10 @@ class KurdishCupertinoLocalizations extends GlobalCupertinoLocalizations {
   String? get timerPickerHourLabelMany => null;
 
   @override
-  String? get timerPickerHourLabelOne => 'ihora';
+  String? get timerPickerHourLabelOne => 'کاتژمێر';
 
   @override
-  String get timerPickerHourLabelOther => 'amahora';
+  String get timerPickerHourLabelOther => 'کاتژمێر';
 
   @override
   String? get timerPickerHourLabelTwo => null;
@@ -158,10 +158,10 @@ class KurdishCupertinoLocalizations extends GlobalCupertinoLocalizations {
   String? get timerPickerMinuteLabelMany => null;
 
   @override
-  String? get timerPickerMinuteLabelOne => 'iminithi.';
+  String? get timerPickerMinuteLabelOne => 'خولەک';
 
   @override
-  String get timerPickerMinuteLabelOther => 'iminithi.';
+  String get timerPickerMinuteLabelOther => 'خولەک';
 
   @override
   String? get timerPickerMinuteLabelTwo => null;
@@ -176,10 +176,10 @@ class KurdishCupertinoLocalizations extends GlobalCupertinoLocalizations {
   String? get timerPickerSecondLabelMany => null;
 
   @override
-  String? get timerPickerSecondLabelOne => 'isekhondi.';
+  String? get timerPickerSecondLabelOne => 'چرکە';
 
   @override
-  String get timerPickerSecondLabelOther => 'isekhondi.';
+  String get timerPickerSecondLabelOther => 'چرکە';
 
   @override
   String? get timerPickerSecondLabelTwo => null;

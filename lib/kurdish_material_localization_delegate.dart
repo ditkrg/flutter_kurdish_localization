@@ -82,7 +82,7 @@ class KurdishMaterialLocalizations extends GlobalMaterialLocalizations {
   String get calendarModeButtonLabel => 'گۆڕین بۆ ڕۆژژمێر';
 
   @override
-  String get cancelButtonLabel => 'هەڵوەشاندنەوه';
+  String get cancelButtonLabel => 'هەڵوەشاندنەوە';
 
   @override
   String get closeButtonLabel => 'داخستن';
@@ -235,7 +235,7 @@ class KurdishMaterialLocalizations extends GlobalMaterialLocalizations {
 
   @override
   String get remainingTextFieldCharacterCountOther =>
-      '\$remainingCount پیتەکان ماون';
+      '\$remainingCount پیت ماون';
 
   @override
   String? get remainingTextFieldCharacterCountTwo => null;
@@ -483,10 +483,10 @@ class KurdishMaterialLocalizations extends GlobalMaterialLocalizations {
   String get keyboardKeySpace => 'Space';
 
   @override
-  String get menuBarMenuLabel => 'Menu bar menu';
+  String get menuBarMenuLabel => 'مێنیوی شریت';
 
   @override
-  String get bottomSheetLabel => 'Bottom sheet';
+  String get bottomSheetLabel => 'پەڕەی خوارەوە';
 
   @override
   String get currentDateLabel => 'ئەمڕۆ';
@@ -495,7 +495,7 @@ class KurdishMaterialLocalizations extends GlobalMaterialLocalizations {
   String get keyboardKeyShift => 'Left Shift';
 
   @override
-  String get scrimLabel => 'Scrim';
+  String get scrimLabel => 'پەردەی تاریککەر';
 
   @override
   String get scrimOnTapHintRaw => 'ئێرە داگرە بۆ لابردن';
