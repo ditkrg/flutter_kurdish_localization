@@ -23,3 +23,9 @@
 
 ## 0.0.9
 * Adding new words
+
+## 1.1.0
+* Add Badini / Behdini Kurmanji ('kmr') localization: `KurmanjiMaterialLocalizations`,
+  `KurmanjiCupertinoLocalizations`, `KurmanjiWidgetLocalizations`, mirroring the
+  Central Kurdish ('ckb') delegates with their own Arabic-script, RTL Badini strings
+  and Badini month/weekday date symbols (Western digits, 24-hour clock).
