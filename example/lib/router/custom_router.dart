@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_kurdish_localization_example/screens/home_page.dart';
 import 'package:flutter_kurdish_localization_example/screens/landing.dart';
 import 'package:flutter_kurdish_localization_example/router/route_constants.dart';

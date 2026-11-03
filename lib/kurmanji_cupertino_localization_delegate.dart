@@ -1,8 +1,7 @@
 import 'dart:async';
 
-import 'package:flutter/cupertino.dart';
+import 'package:cupertino_ui/cupertino_ui.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/date_symbol_data_custom.dart' as date_symbol_data_custom;
 import 'package:intl/date_symbols.dart' as intl;
 import 'package:intl/intl.dart' as intl;
@@ -371,25 +370,10 @@ const kmDateSymbols = {
   'SHORTQUARTERS': ['چ.۱', 'چ.۲', 'چ.۳', 'چ.۴'],
   'QUARTERS': ['چارەکا ئێکێ', 'چارەکا دووێ', 'چارەکا سێیێ', 'چارەکا چارێ'],
   'AMPMS': ['پ.ن', 'د.ن'],
-  'DATEFORMATS': [
-    'y MMMM d, EEEE',
-    'y MMMM d',
-    'y MMM d',
-    'y-MM-dd',
-  ],
-  'TIMEFORMATS': [
-    'HH:mm:ss zzzz',
-    'HH:mm:ss z',
-    'HH:mm:ss',
-    'HH:mm',
-  ],
+  'DATEFORMATS': ['y MMMM d, EEEE', 'y MMMM d', 'y MMM d', 'y-MM-dd'],
+  'TIMEFORMATS': ['HH:mm:ss zzzz', 'HH:mm:ss z', 'HH:mm:ss', 'HH:mm'],
   'AVAILABLEFORMATS': null,
-  'DATETIMEFORMATS': [
-    '{1} {0}',
-    '{1} {0}',
-    '{1} {0}',
-    '{1} {0}',
-  ],
+  'DATETIMEFORMATS': ['{1} {0}', '{1} {0}', '{1} {0}', '{1} {0}'],
   'ZERODIGIT': '0',
   'FIRSTDAYOFWEEK': 5,
   'WEEKENDRANGE': [4, 5],

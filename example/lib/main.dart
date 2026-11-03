@@ -1,11 +1,10 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_kurdish_localization/flutter_kurdish_localization.dart';
 import 'package:flutter_kurdish_localization_example/localization/demo_localization.dart';
 import 'package:flutter_kurdish_localization_example/router/custom_router.dart';
 import 'package:flutter_kurdish_localization_example/router/route_constants.dart';
 import 'package:flutter_kurdish_localization_example/util/constants.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'localization/language_constants.dart';
@@ -63,10 +62,13 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
         systemNavigationBarColor: Colors.transparent, // navigation bar color
         statusBarColor: primaryColor, // status bar color
-        statusBarIconBrightness: Brightness.light));
+        statusBarIconBrightness: Brightness.light,
+      ),
+    );
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Flutter Multi Localization Demo",
@@ -78,9 +80,7 @@ class _MyAppState extends State<MyApp> {
         KurdishWidgetLocalizations.delegate,
         KurdishCupertinoLocalizations.delegate,
         DemoLocalization.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate
+        ...GlobalMaterialLocalizations.delegates,
       ],
       localeResolutionCallback: (locale, supportedLocales) {
         for (var supportedLocale in supportedLocales) {

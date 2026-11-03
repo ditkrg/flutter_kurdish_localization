@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart';
 
 class DemoLocalization {
@@ -14,11 +14,13 @@ class DemoLocalization {
   Map<String, String>? _localizedValues;
 
   Future<void> load() async {
-    String jsonStringValues =
-        await rootBundle.loadString('lib/lang/${locale!.languageCode}.json');
+    String jsonStringValues = await rootBundle.loadString(
+      'lib/lang/${locale!.languageCode}.json',
+    );
     Map<String, dynamic> mappedJson = json.decode(jsonStringValues);
-    _localizedValues =
-        mappedJson.map((key, value) => MapEntry(key, value.toString()));
+    _localizedValues = mappedJson.map(
+      (key, value) => MapEntry(key, value.toString()),
+    );
   }
 
   String translate(String key) {
@@ -40,7 +42,7 @@ class _DemoLocalizationsDelegate
 
   @override
   Future<DemoLocalization> load(Locale locale) async {
-    DemoLocalization localization =  DemoLocalization(locale);
+    DemoLocalization localization = DemoLocalization(locale);
     await localization.load();
     return localization;
   }

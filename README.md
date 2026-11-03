@@ -21,25 +21,31 @@ This package provides unofficial localization support for *Central Kurdish Branc
 ----
 ### Getting Started
 
+Version 2 works with `package:material_ui` and `package:cupertino_ui`, the
+standalone Material and Cupertino libraries, and needs Flutter 3.47 or newer.
+An app still on `package:flutter/material.dart` stays on 1.x.
+
 `import 'package:flutter_kurdish_localization/flutter_kurdish_localization.dart';`
 
-Add these two delegates to *localizationsDelegates* array
+Add the delegates for each language to *localizationsDelegates*:
 
-
-**KurdishMaterialLocalizations.delegate** For text and dates localization
-**KurdishWidgetLocalizations.delegate**  For text and UI directionality
+**KurdishMaterialLocalizations.delegate**, **KurdishCupertinoLocalizations.delegate** For text and dates localization (`ckb`)
+**KurdishWidgetLocalizations.delegate**  For text and UI directionality (`ckb`)
+**KurmanjiMaterialLocalizations.delegate**, **KurmanjiCupertinoLocalizations.delegate**, **KurmanjiWidgetLocalizations.delegate** The same for Badini (`kmr`)
 
 ```dart
+import 'package:material_ui/material_ui.dart';
+
 return MaterialApp(
-	localizationsDelegates: [
-		..
-		KurdishMaterialLocalizations.delegate,
-		KurdishWidgetLocalizations.delegate,
-		...
-	],
-	supportedLocales: [ Locale('ckb') ]
-	ocale: Locale('ckb')
- )
+  localizationsDelegates: const [
+    KurdishMaterialLocalizations.delegate,
+    KurdishCupertinoLocalizations.delegate,
+    KurdishWidgetLocalizations.delegate,
+    ...GlobalMaterialLocalizations.delegates,
+  ],
+  supportedLocales: const [Locale('ckb')],
+  locale: const Locale('ckb'),
+);
 ```
 
 -----

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_kurdish_localization_example/localization/language_constants.dart';
 import 'package:flutter_kurdish_localization_example/util/constants.dart';
 import 'package:flutter_kurdish_localization_example/util/custom_container.dart';
@@ -29,9 +29,7 @@ class _HomeWidgetsState extends State<HomeWidgets> {
             curve: Curves.easeInBack,
             style: FlutterLogoStyle.stacked,
           ),
-          const Divider(
-            height: 40,
-          ),
+          const Divider(height: 40),
           //! text form field
           Form(
             key: _key,
@@ -136,7 +134,7 @@ class _HomeWidgetsState extends State<HomeWidgets> {
                 ),
               ],
             ),
-          )
+          ),
         ],
       ),
     );

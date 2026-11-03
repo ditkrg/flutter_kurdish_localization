@@ -1,7 +1,7 @@
 // ignore_for_file: deprecated_member_use
 
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:cupertino_ui/cupertino_ui.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_kurdish_localization_example/classes/language.dart';
 import 'package:flutter_kurdish_localization_example/localization/language_constants.dart';
 import 'package:flutter_kurdish_localization_example/main.dart';
@@ -33,12 +33,10 @@ class _LandingScreenState extends State<LandingScreen> {
         child: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  Color(0xffee8361),
-                  Color(0xffe3513f),
-                ]),
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [Color(0xffee8361), Color(0xffe3513f)],
+            ),
           ),
           width: double.infinity,
           child: Stack(
@@ -56,8 +54,9 @@ class _LandingScreenState extends State<LandingScreen> {
                         margin: const EdgeInsets.only(top: 30, bottom: 20),
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(40.0)),
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(40.0),
+                        ),
                         child: const FlutterLogo(
                           size: 100,
                           style: FlutterLogoStyle.stacked,
@@ -68,19 +67,19 @@ class _LandingScreenState extends State<LandingScreen> {
                         child: Text(
                           getTranslated(context, 'desc'),
                           textAlign: TextAlign.center,
-                          style: const TextStyle(
-                            color: Colors.white,
-                          ),
+                          style: const TextStyle(color: Colors.white),
                           maxLines: 3,
                         ),
-                      )
+                      ),
                     ],
                   ),
                   const Spacer(),
                   Container(
                     width: double.infinity,
                     padding: const EdgeInsets.symmetric(
-                        vertical: 20, horizontal: 15),
+                      vertical: 20,
+                      horizontal: 15,
+                    ),
                     margin: const EdgeInsets.symmetric(horizontal: 10)
                         .copyWith(bottom: 10),
                     decoration: BoxDecoration(
@@ -98,35 +97,37 @@ class _LandingScreenState extends State<LandingScreen> {
                         ),
                         const SizedBox(height: 20),
                         ListView.builder(
-                            itemCount: 3,
-                            physics: const BouncingScrollPhysics(
-                                parent: NeverScrollableScrollPhysics()),
-                            shrinkWrap: true,
-                            itemBuilder: (context, i) {
-                              final e = _grid[i];
-                              return LanguageItems(
-                                title: e.name,
-                                code: e.languageCode,
-                                flag: e.flag,
-                                onPressed: () {
-                                  _changeLanguage(e.languageCode);
-                                },
-                              );
-                            }),
+                          itemCount: 3,
+                          physics: const BouncingScrollPhysics(
+                            parent: NeverScrollableScrollPhysics(),
+                          ),
+                          shrinkWrap: true,
+                          itemBuilder: (context, i) {
+                            final e = _grid[i];
+                            return LanguageItems(
+                              title: e.name,
+                              code: e.languageCode,
+                              flag: e.flag,
+                              onPressed: () {
+                                _changeLanguage(e.languageCode);
+                              },
+                            );
+                          },
+                        ),
                         const SizedBox(height: 10),
                         CupertinoButton(
-                            color: primaryColor,
-                            child: Text(getTranslated(context, 'ok_button')),
-                            onPressed: () async {
-                              SharedPreferences _prefs =
-                                  await SharedPreferences.getInstance();
-                              _prefs.setBool("landing", true);
-                              Navigator.pushReplacementNamed(
-                                  context, homeRoute);
-                            })
+                          color: primaryColor,
+                          child: Text(getTranslated(context, 'ok_button')),
+                          onPressed: () async {
+                            SharedPreferences _prefs =
+                                await SharedPreferences.getInstance();
+                            _prefs.setBool("landing", true);
+                            Navigator.pushReplacementNamed(context, homeRoute);
+                          },
+                        ),
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
             ],
@@ -138,9 +139,13 @@ class _LandingScreenState extends State<LandingScreen> {
 }
 
 class LanguageItems extends StatelessWidget {
-  const LanguageItems(
-      {Key? key, this.title, this.code, this.flag, this.onPressed})
-      : super(key: key);
+  const LanguageItems({
+    Key? key,
+    this.title,
+    this.code,
+    this.flag,
+    this.onPressed,
+  }) : super(key: key);
   final String? title;
   final String? code;
   final String? flag;
@@ -169,15 +174,12 @@ class LanguageItems extends StatelessWidget {
                 const Spacer(),
                 SizedBox(
                   height: 40,
-                  child: VerticalDivider(
-                    color: Colors.grey[300],
-                    thickness: 1,
-                  ),
+                  child: VerticalDivider(color: Colors.grey[300], thickness: 1),
                 ),
                 CircleAvatar(
                   backgroundColor: Colors.transparent,
                   backgroundImage: AssetImage('assets/flags/$flag.png'),
-                )
+                ),
               ],
             ),
           ),

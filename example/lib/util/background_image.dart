@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 class BackgroundImage extends StatelessWidget {
   const BackgroundImage({Key? key}) : super(key: key);

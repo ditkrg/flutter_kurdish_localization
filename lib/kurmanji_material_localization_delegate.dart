@@ -1,8 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:intl/date_symbol_data_custom.dart' as date_symbol_data_custom;
 import 'package:intl/date_symbols.dart' as intl;
 import 'package:intl/intl.dart' as intl;
@@ -126,8 +125,7 @@ class KurmanjiMaterialLocalizations extends GlobalMaterialLocalizations {
   String get dateRangePickerHelpText => 'مەودایێ دیاری بکە';
 
   @override
-  String get dateRangeStartDateSemanticLabelRaw =>
-      'بەرواری دەستپێک \$fullDate';
+  String get dateRangeStartDateSemanticLabelRaw => 'بەرواری دەستپێک \$fullDate';
 
   @override
   String get dateRangeStartLabel => 'بەرواری دەستپێک';
@@ -236,7 +234,8 @@ class KurmanjiMaterialLocalizations extends GlobalMaterialLocalizations {
   String get remainingTextFieldCharacterCountOne => '١ پیت ماوە';
 
   @override
-  String get remainingTextFieldCharacterCountOther => '\$remainingCount پیت ماون';
+  String get remainingTextFieldCharacterCountOther =>
+      '\$remainingCount پیت ماون';
 
   @override
   String? get remainingTextFieldCharacterCountTwo => null;

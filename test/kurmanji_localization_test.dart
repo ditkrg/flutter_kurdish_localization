@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_kurdish_localization/flutter_kurdish_localization.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -81,25 +81,24 @@ void main() {
     // Material/Widget's shared choice. Pin them equal so this can't recur.
     test('AM/PM abbreviations and "today" agree between Material and '
         'Cupertino', () async {
-      final mat =
-          await KurmanjiMaterialLocalizations.delegate.load(kmr)
-              as KurmanjiMaterialLocalizations;
-      final cup =
-          await KurmanjiCupertinoLocalizations.delegate.load(kmr)
-              as KurmanjiCupertinoLocalizations;
+      final mat = await KurmanjiMaterialLocalizations.delegate.load(
+        kmr,
+      ) as KurmanjiMaterialLocalizations;
+      final cup = await KurmanjiCupertinoLocalizations.delegate.load(
+        kmr,
+      ) as KurmanjiCupertinoLocalizations;
       expect(mat.anteMeridiemAbbreviation, cup.anteMeridiemAbbreviation);
       expect(mat.postMeridiemAbbreviation, cup.postMeridiemAbbreviation);
       expect(mat.currentDateLabel, cup.todayLabel);
     });
 
-    test('"share" is translated the same way in all three classes',
-        () async {
-      final mat =
-          await KurmanjiMaterialLocalizations.delegate.load(kmr)
-              as KurmanjiMaterialLocalizations;
-      final cup =
-          await KurmanjiCupertinoLocalizations.delegate.load(kmr)
-              as KurmanjiCupertinoLocalizations;
+    test('"share" is translated the same way in all three classes', () async {
+      final mat = await KurmanjiMaterialLocalizations.delegate.load(
+        kmr,
+      ) as KurmanjiMaterialLocalizations;
+      final cup = await KurmanjiCupertinoLocalizations.delegate.load(
+        kmr,
+      ) as KurmanjiCupertinoLocalizations;
       final wid = await KurmanjiWidgetLocalizations.delegate.load(kmr);
       expect(mat.shareButtonLabel, cup.shareButtonLabel);
       expect(mat.shareButtonLabel, wid.shareButtonLabel);
@@ -112,9 +111,9 @@ void main() {
     // from) -- e.g. 'ihora', 'Sesha', 'ezimpondweni'. Pin the fixed values so
     // this can't silently regress.
     test('date/timer picker strings are Kurdish, not Zulu', () async {
-      final loc =
-          await KurdishCupertinoLocalizations.delegate.load(ckb)
-              as KurdishCupertinoLocalizations;
+      final loc = await KurdishCupertinoLocalizations.delegate.load(
+        ckb,
+      ) as KurdishCupertinoLocalizations;
       expect(loc.searchTextFieldPlaceholderLabel, 'گەڕان');
       expect(loc.timerPickerHourLabelOther, isNot('amahora'));
       expect(loc.timerPickerMinuteLabelOther, isNot('iminithi.'));
