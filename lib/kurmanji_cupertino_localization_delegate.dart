@@ -6,6 +6,8 @@ import 'package:intl/date_symbol_data_custom.dart' as date_symbol_data_custom;
 import 'package:intl/date_symbols.dart' as intl;
 import 'package:intl/intl.dart' as intl;
 
+import 'src/kurmanji_cupertino_strings.dart';
+
 class _KurmanjiCupertinoLocalizationsDelegate
     extends LocalizationsDelegate<CupertinoLocalizations> {
   const _KurmanjiCupertinoLocalizationsDelegate();
@@ -45,7 +47,8 @@ class _KurmanjiCupertinoLocalizationsDelegate
 
 /// Cupertino strings for Badini / Behdini Kurmanji ('kmr'). See
 /// [KurmanjiMaterialLocalizations] for the word-choice/grammar rationale.
-class KurmanjiCupertinoLocalizations extends GlobalCupertinoLocalizations {
+class KurmanjiCupertinoLocalizations extends GlobalCupertinoLocalizations
+    with KurmanjiCupertinoStrings {
   const KurmanjiCupertinoLocalizations({
     super.localeName = 'kmr',
     required super.fullYearFormat,
@@ -61,177 +64,6 @@ class KurmanjiCupertinoLocalizations extends GlobalCupertinoLocalizations {
   });
   static const LocalizationsDelegate<CupertinoLocalizations> delegate =
       _KurmanjiCupertinoLocalizationsDelegate();
-
-  @override
-  String get alertDialogLabel => 'ئاگەهداری';
-
-  @override
-  String get anteMeridiemAbbreviation => 'ب.ن';
-
-  @override
-  String get copyButtonLabel => 'کۆپی';
-
-  @override
-  String get cutButtonLabel => 'بڕین';
-
-  @override
-  String get modalBarrierDismissLabel => 'دەرکرن';
-
-  @override
-  String get pasteButtonLabel => 'پەیست';
-
-  @override
-  String get postMeridiemAbbreviation => 'پ.ن';
-
-  @override
-  String get selectAllButtonLabel => 'هەمی هەلبژێرە';
-
-  @override
-  String get datePickerDateOrderString => 'dmy';
-
-  @override
-  String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
-
-  @override
-  String? get datePickerHourSemanticsLabelFew => null;
-
-  @override
-  String? get datePickerHourSemanticsLabelMany => null;
-
-  @override
-  String? get datePickerHourSemanticsLabelOne => r'دەمژمێر $hour';
-
-  @override
-  String get datePickerHourSemanticsLabelOther => r'دەمژمێر $hour';
-
-  @override
-  String? get datePickerHourSemanticsLabelTwo => null;
-
-  @override
-  String? get datePickerHourSemanticsLabelZero => null;
-
-  @override
-  String? get datePickerMinuteSemanticsLabelFew => null;
-
-  @override
-  String? get datePickerMinuteSemanticsLabelMany => null;
-
-  @override
-  String? get datePickerMinuteSemanticsLabelOne => '١ خولەک';
-
-  @override
-  String get datePickerMinuteSemanticsLabelOther => r'$minute خولەک';
-
-  @override
-  String? get datePickerMinuteSemanticsLabelTwo => null;
-
-  @override
-  String? get datePickerMinuteSemanticsLabelZero => null;
-
-  @override
-  String get searchTextFieldPlaceholderLabel => 'گەڕان';
-
-  @override
-  String get tabSemanticsLabelRaw => r'خشتەبەندی $tabIndex ژ $tabCount';
-
-  @override
-  String? get timerPickerHourLabelFew => null;
-
-  @override
-  String? get timerPickerHourLabelMany => null;
-
-  @override
-  String? get timerPickerHourLabelOne => 'دەمژمێر';
-
-  @override
-  String get timerPickerHourLabelOther => 'دەمژمێر';
-
-  @override
-  String? get timerPickerHourLabelTwo => null;
-
-  @override
-  String? get timerPickerHourLabelZero => null;
-
-  @override
-  String? get timerPickerMinuteLabelFew => null;
-
-  @override
-  String? get timerPickerMinuteLabelMany => null;
-
-  @override
-  String? get timerPickerMinuteLabelOne => 'خولەک';
-
-  @override
-  String get timerPickerMinuteLabelOther => 'خولەک';
-
-  @override
-  String? get timerPickerMinuteLabelTwo => null;
-
-  @override
-  String? get timerPickerMinuteLabelZero => null;
-
-  @override
-  String? get timerPickerSecondLabelFew => null;
-
-  @override
-  String? get timerPickerSecondLabelMany => null;
-
-  @override
-  String? get timerPickerSecondLabelOne => 'چرکە';
-
-  @override
-  String get timerPickerSecondLabelOther => 'چرکە';
-
-  @override
-  String? get timerPickerSecondLabelTwo => null;
-
-  @override
-  String? get timerPickerSecondLabelZero => null;
-
-  @override
-  String get todayLabel => 'ئیرۆ';
-
-  @override
-  String get noSpellCheckReplacementsLabel => 'هیچ نەهاتە دیتن';
-
-  @override
-  String get clearButtonLabel => 'پاقژکرن';
-
-  @override
-  String get lookUpButtonLabel => 'گەڕین';
-
-  @override
-  String get menuDismissLabel => 'داخستن';
-
-  @override
-  String get searchWebButtonLabel => 'گەڕین ل سەر وێبێ';
-
-  @override
-  String get shareButtonLabel => 'پارڤەکرن';
-
-  @override
-  String get backButtonLabel => 'ڤەگەڕان';
-
-  @override
-  String get cancelButtonLabel => 'لابردن';
-
-  @override
-  String get collapsedHint => 'بچووک کری';
-
-  @override
-  String get expandedHint => 'گەورە کری';
-
-  @override
-  String get expansionTileCollapsedHint => 'بچووک کری';
-
-  @override
-  String get expansionTileCollapsedTapHint => 'پێل بکە بۆ گەورەکرن';
-
-  @override
-  String get expansionTileExpandedHint => 'گەورە کری';
-
-  @override
-  String get expansionTileExpandedTapHint => 'پێل بکە بۆ بچووککرن';
 }
 
 /// Badini ('kmr') date symbols — Western digits (ZERODIGIT '0') and a

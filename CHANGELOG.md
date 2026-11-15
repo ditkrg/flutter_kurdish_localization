@@ -38,3 +38,13 @@
   library stay on 1.x.
 * Requires Flutter 3.47 and Dart 3.13.
 * The widget delegates import only `package:flutter/widgets.dart`.
+
+## 2.1.0
+* `package:flutter_kurdish_localization/legacy.dart` adds
+  `LegacyKurdishMaterialLocalizations`, `LegacyKurdishCupertinoLocalizations`,
+  `LegacyKurmanjiMaterialLocalizations` and
+  `LegacyKurmanjiCupertinoLocalizations`, built on
+  `package:flutter/material.dart` and `package:flutter/cupertino.dart`. Pass
+  them to `MaterialUiCompatibilityBridge.delegates` so widgets from packages
+  still on those libraries read Sorani and Badini too.
+* Both kinds of delegate read the same strings.

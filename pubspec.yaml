@@ -1,6 +1,6 @@
 name: flutter_kurdish_localization
 description: Flutter Central Kurdish and Badini Kurmanji Localization in easy steps, simple ways to localize and translate your app to Kurdish.
-version: 2.0.0
+version: 2.1.0
 homepage: https://github.com/aminsamad/flutter_kurdish_localization
 
 environment:
@@ -10,6 +10,9 @@ environment:
 dependencies:
   cupertino_ui: ^1.1.5
   flutter:
+    sdk: flutter
+  # The legacy delegates in legacy.dart extend its Global*Localizations.
+  flutter_localizations:
     sdk: flutter
   intl: ^0.20.2
   material_ui: ^1.9.0

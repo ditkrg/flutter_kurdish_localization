@@ -6,6 +6,8 @@ import 'package:intl/date_symbol_data_custom.dart' as date_symbol_data_custom;
 import 'package:intl/date_symbols.dart' as intl;
 import 'package:intl/intl.dart' as intl;
 
+import 'src/kurdish_cupertino_strings.dart';
+
 class _KurdishCupertinoLocalizationsDelegate
     extends LocalizationsDelegate<CupertinoLocalizations> {
   const _KurdishCupertinoLocalizationsDelegate();
@@ -43,7 +45,8 @@ class _KurdishCupertinoLocalizationsDelegate
   bool shouldReload(_KurdishCupertinoLocalizationsDelegate old) => false;
 }
 
-class KurdishCupertinoLocalizations extends GlobalCupertinoLocalizations {
+class KurdishCupertinoLocalizations extends GlobalCupertinoLocalizations
+    with KurdishCupertinoStrings {
   const KurdishCupertinoLocalizations({
     super.localeName = 'ckb',
     required super.fullYearFormat,
@@ -59,177 +62,6 @@ class KurdishCupertinoLocalizations extends GlobalCupertinoLocalizations {
   });
   static const LocalizationsDelegate<CupertinoLocalizations> delegate =
       _KurdishCupertinoLocalizationsDelegate();
-
-  @override
-  String get alertDialogLabel => 'ئاگادارکردنەوە';
-
-  @override
-  String get anteMeridiemAbbreviation => 'پ.ن';
-
-  @override
-  String get copyButtonLabel => 'کۆپی';
-
-  @override
-  String get cutButtonLabel => 'بڕین';
-
-  @override
-  String get modalBarrierDismissLabel => 'دەرکردن';
-
-  @override
-  String get pasteButtonLabel => 'پەیست';
-
-  @override
-  String get postMeridiemAbbreviation => 'د.ن';
-
-  @override
-  String get selectAllButtonLabel => 'هەموو هەڵبژێرە';
-
-  @override
-  String get datePickerDateOrderString => 'dmy';
-
-  @override
-  String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
-
-  @override
-  String? get datePickerHourSemanticsLabelFew => null;
-
-  @override
-  String? get datePickerHourSemanticsLabelMany => null;
-
-  @override
-  String? get datePickerHourSemanticsLabelOne => r'کاتژمێر $hour';
-
-  @override
-  String get datePickerHourSemanticsLabelOther => r'کاتژمێر $hour';
-
-  @override
-  String? get datePickerHourSemanticsLabelTwo => null;
-
-  @override
-  String? get datePickerHourSemanticsLabelZero => null;
-
-  @override
-  String? get datePickerMinuteSemanticsLabelFew => null;
-
-  @override
-  String? get datePickerMinuteSemanticsLabelMany => null;
-
-  @override
-  String? get datePickerMinuteSemanticsLabelOne => '١ خولەک';
-
-  @override
-  String get datePickerMinuteSemanticsLabelOther => r'$minute خولەک';
-
-  @override
-  String? get datePickerMinuteSemanticsLabelTwo => null;
-
-  @override
-  String? get datePickerMinuteSemanticsLabelZero => null;
-
-  @override
-  String get searchTextFieldPlaceholderLabel => 'گەڕان';
-
-  @override
-  String get tabSemanticsLabelRaw => r'خشتەبەندی $tabIndex لە $tabCount';
-
-  @override
-  String? get timerPickerHourLabelFew => null;
-
-  @override
-  String? get timerPickerHourLabelMany => null;
-
-  @override
-  String? get timerPickerHourLabelOne => 'کاتژمێر';
-
-  @override
-  String get timerPickerHourLabelOther => 'کاتژمێر';
-
-  @override
-  String? get timerPickerHourLabelTwo => null;
-
-  @override
-  String? get timerPickerHourLabelZero => null;
-
-  @override
-  String? get timerPickerMinuteLabelFew => null;
-
-  @override
-  String? get timerPickerMinuteLabelMany => null;
-
-  @override
-  String? get timerPickerMinuteLabelOne => 'خولەک';
-
-  @override
-  String get timerPickerMinuteLabelOther => 'خولەک';
-
-  @override
-  String? get timerPickerMinuteLabelTwo => null;
-
-  @override
-  String? get timerPickerMinuteLabelZero => null;
-
-  @override
-  String? get timerPickerSecondLabelFew => null;
-
-  @override
-  String? get timerPickerSecondLabelMany => null;
-
-  @override
-  String? get timerPickerSecondLabelOne => 'چرکە';
-
-  @override
-  String get timerPickerSecondLabelOther => 'چرکە';
-
-  @override
-  String? get timerPickerSecondLabelTwo => null;
-
-  @override
-  String? get timerPickerSecondLabelZero => null;
-
-  @override
-  String get todayLabel => 'ئەمڕۆ';
-
-  @override
-  String get noSpellCheckReplacementsLabel => 'هیچ نەدۆزرایەوە';
-
-  @override
-  String get clearButtonLabel => 'سڕینەوە';
-
-  @override
-  String get lookUpButtonLabel => 'گەڕان';
-
-  @override
-  String get menuDismissLabel => 'داخستنەوە';
-
-  @override
-  String get searchWebButtonLabel => 'گەڕان لە وێب';
-
-  @override
-  String get shareButtonLabel => 'هاوبەشکردن';
-
-  @override
-  String get backButtonLabel => 'گەڕانەوە';
-
-  @override
-  String get cancelButtonLabel => 'لابردن';
-
-  @override
-  String get collapsedHint => 'بچوککراو';
-
-  @override
-  String get expandedHint => 'گەورەکراو';
-
-  @override
-  String get expansionTileCollapsedHint => 'بچوککراو';
-
-  @override
-  String get expansionTileCollapsedTapHint => 'داگرە بۆ گەورەکردن';
-
-  @override
-  String get expansionTileExpandedHint => 'گەورەکراو';
-
-  @override
-  String get expansionTileExpandedTapHint => 'داگرە بۆ بچوککردن';
 }
 
 const kuDateSymbols = {

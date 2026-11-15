@@ -48,6 +48,24 @@ return MaterialApp(
 );
 ```
 
+Widgets from packages still on `package:flutter/material.dart` read the legacy
+`MaterialLocalizations`. Give them Kurdish too by passing the delegates in
+`legacy.dart` to `MaterialUiCompatibilityBridge`:
+
+```dart
+import 'package:flutter_kurdish_localization/legacy.dart';
+
+builder: (context, child) => MaterialUiCompatibilityBridge(
+  delegates: const [
+    LegacyKurdishMaterialLocalizations.delegate,
+    LegacyKurdishCupertinoLocalizations.delegate,
+    // then the framework's GlobalMaterialLocalizations.delegate and
+    // GlobalCupertinoLocalizations.delegate for the other languages
+  ],
+  child: child!,
+),
+```
+
 -----
 ### Translations are available now!
 
